@@ -1,0 +1,4 @@
+numpy~=2.0.1
+PyAutoGUI~=0.9.54
+opencv-python~=4.10.0.84
+keyboard~=0.13.5
