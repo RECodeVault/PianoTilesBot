@@ -66,7 +66,7 @@ def main():
                 if found_tile:
                     break
 
-        if found_tile:
+        if found_tile: # Because the program runs so fast we put a cap here so it does not duplicate its inputs
             time.sleep(0.05)
 
 
