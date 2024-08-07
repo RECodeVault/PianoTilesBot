@@ -16,10 +16,20 @@ def take_screenshot():
 
 
 def is_tile(pixel_value):
+    """
+    Checks if the pixel is black, meaning it is tile
+    :param pixel_value:
+    :return:
+    """
     return pixel_value == 0
 
 
 def move_and_click(x, y):
+    """
+    Move and click
+    :param x: x position
+    :param y: y position
+    """
     pyautogui.moveTo(x, y)
     pyautogui.click()
 
@@ -55,6 +65,9 @@ def main():
                         break
                 if found_tile:
                     break
+
+        if found_tile:
+            time.sleep(0.05)
 
 
 if __name__ == "__main__":
